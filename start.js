@@ -1,5 +1,6 @@
 require("dotenv").config();
 require("dotenv").config();
+require("./models/Registration");
 
 const mongoose = require("mongoose");
 const mongoose = require("mongoose");
