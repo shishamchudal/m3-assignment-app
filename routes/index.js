@@ -39,4 +39,8 @@ router.post(
   }
 );
 
+router.get('/registrations', (req, res) => {
+    res.render('index', { title: 'Listing registrations' });
+});
+
 module.exports = router;
