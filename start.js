@@ -3,7 +3,6 @@ require("dotenv").config();
 require("./models/Registration");
 
 const mongoose = require("mongoose");
-const mongoose = require("mongoose");
 
 mongoose.connect(process.env.DATABASE, {
   useNewUrlParser: true,
