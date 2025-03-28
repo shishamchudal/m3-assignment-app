@@ -5,13 +5,17 @@ head
   link(rel='stylesheet', href='/css/styles.css')
   script(src='script.js')
 header
-  nav
-    ul
+  nav.nav-container
+    ul.left-nav
       li
         a(href='/') Home
       li |
       li
         a(href='#') Blog
+    ul.right-nav
+      li
+        a(href='/register') Register
+
 main
   section#intro-text
     span Simple Kitchen

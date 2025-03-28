@@ -2,26 +2,49 @@
 /* SCSS */
 /* Variables */
 /*# sourceMappingURL=styles.css.map */
-nav {
-	font-size: 1em;
-	font-weight: bold;
-	float: left;
-	ul {
+header {
+	display: flex;
+	justify-content: space-between; // Aligns left and right sections
+	align-items: center;
+	padding: 10px;
+  
+	nav.nav-container {
+	  display: flex;
+	  width: 100%;
+	  justify-content: space-between;
+	  align-items: center;
+  
+	  ul {
 		list-style-type: none;
+		display: flex;
+		padding: 0;
+		margin: 0;
+  
 		li {
-			float: left;
-			margin: 0 5px 0 0;
+		  margin: 0 10px;
+		  color: white;
+		  
+		  a {
+			text-decoration: none;
 			color: white;
-			a {
-				text-decoration: none;
-				color: white;
-				&:hover {
-					text-decoration: underline;
-				}
+			font-weight: bold;
+			&:hover {
+			  text-decoration: underline;
 			}
+		  }
 		}
+	  }
+  
+	  .left-nav {
+		display: flex;
+	  }
+  
+	  .right-nav {
+		margin-left: auto; // Push Recipes to the right
+	  }
 	}
-}
+  }
+  
 html {
 	font-size: 1em;
 	width: 100%;
