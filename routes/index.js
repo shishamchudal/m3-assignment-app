@@ -30,7 +30,7 @@ router.get('/registrations', basic.check((req, res) => {
     });
 }));
 
-router.post('/register', 
+router.post('/', 
     [
         check('name')
         .isLength({ min: 1 })
