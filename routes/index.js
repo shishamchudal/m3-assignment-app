@@ -41,6 +41,8 @@ router.post(
   [
     check("name").isLength({ min: 1 }).withMessage("Please enter a name"),
     check("email").isLength({ min: 1 }).withMessage("Please enter an email"),
+    check("username").isLength({ min: 1 }).withMessage("Please enter a username"),
+    check("password").isLength({ min: 1 }).withMessage("Please enter a password"),
   ],
   (req, res) => {
     //console.log(req.body);
